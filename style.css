@@ -110,5 +110,89 @@
 .box2 .bottom {
   width: 100%;
   height: 800px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+}
+
+/* box3 */
+.box3 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box3 p {
+  color: #ff3147;
+  text-align: center;
+}
+.box3 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.box3 .focus {
+  height: 300px;
+}
+
+/* BOX4 */
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box4 p {
+  text-align: center;
+  color: #ff3147;
+}
+.box4 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.box4 .work {
+  height: 600px;
+}
+
+/* box 5 */
+.box5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box5 p {
+  text-align: center;
+  color: #ff3147;
+}
+.box5 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.box5 .user {
+  height: 300px;
+}
+
+/* BOX 6 */
+
+.box6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box6 p {
+  text-align: center;
+  color: #ff3147;
+}
+.box6 h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.box6 .quote {
+  height: 300px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #ff3147;
 }
