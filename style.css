@@ -8,6 +8,7 @@
   justify-content: end;
   /* background-color: bisque; */
   gap: 30px;
+  cursor: pointer;
 }
 .nav li {
   margin-top: 10px;
@@ -35,6 +36,11 @@
   height: 500px;
   background-color: rgb(126, 112, 95);
 }
+.box1 .rightBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .leftBox .name {
   font-size: 20px;
   font-weight: 400;
@@ -59,6 +65,7 @@
   padding: 11px 25px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 /* box 2 */
@@ -74,12 +81,24 @@
 }
 .box2 .top {
   width: 60%;
-  height: 200px;
+  /* height: 200px; */
   /* background-color: aqua; */
 }
 .box2 .bottom {
+  margin-top: 30px;
+  margin-bottom: 50px;
   width: 100%;
-  height: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.box2 .bottom .imgBox {
+  width: 20%;
+}
+.box2 .bottom .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .top .topLeft {
   /* height: 50%; */
@@ -117,11 +136,12 @@
 .box3 {
   margin-top: 50px;
   display: flex;
+  /* justify-content: center; */
   flex-direction: column;
   width: 100%;
 }
 
-.box3 p {
+.box3 .textBox3 {
   color: #ff3147;
   text-align: center;
 }
@@ -131,6 +151,15 @@
 }
 .box3 .focus {
   height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.focus .best {
+  width: 18%;
+  /* background-color: rgb(224, 240, 255); */
+}
+.focus .best p {
+  color: black;
 }
 
 /* BOX4 */
