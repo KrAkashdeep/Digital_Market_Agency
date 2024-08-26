@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 100%;
   /* height: 790px; */
@@ -5,7 +8,7 @@
 }
 .nav {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   /* background-color: bisque; */
   gap: 30px;
   cursor: pointer;
@@ -15,6 +18,15 @@
   margin-right: 30px;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  /* scroll-behavior: auto; */
+  color: #000;
+  /* transition-delay: 1s; */
+}
+/* .nav li :hover {
+  background-color: #bcbcbc;
+} */
 .box1 {
   display: flex;
   justify-content: center;
@@ -87,10 +99,12 @@
 .box2 .bottom {
   margin-top: 30px;
   margin-bottom: 50px;
-  width: 100%;
+  width: 70%;
+  /* background-color: #ff3147; */
   height: 150px;
   display: flex;
   justify-content: space-around;
+  /* width: 600px; */
 }
 .box2 .bottom .imgBox {
   width: 20%;
@@ -127,7 +141,7 @@
   /* background-color: aqua; */
 }
 .box2 .bottom {
-  width: 100%;
+  /* width: 100%; */
   height: 800px;
   /* background-color: aquamarine; */
 }
@@ -136,7 +150,8 @@
 .box3 {
   margin-top: 50px;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
@@ -152,11 +167,17 @@
 .box3 .focus {
   height: 300px;
   display: flex;
+  width: 70%;
+  /* align-items: center; */
+  /* justify-content: center; */
   justify-content: space-around;
 }
 .focus .best {
   width: 18%;
   /* background-color: rgb(224, 240, 255); */
+}
+.box3 .focus .best img {
+  width: 40px;
 }
 .focus .best p {
   color: black;
@@ -170,7 +191,7 @@
   width: 100%;
 }
 
-.box4 p {
+.box4 .txt1 {
   text-align: center;
   color: #ff3147;
 }
@@ -180,15 +201,40 @@
 }
 .box4 .work {
   height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
+.box4 .left {
+  width: 40%;
+  height: 75%;
+  display: flex;
+}
+.box4 .left img {
+  width: 100%;
+}
+.box4 .right {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+}
+.box4 .right .txt {
+  padding: 0px 12px;
+  text-align: start;
+  background-color: #f7f7f7;
+}
+.box4 .right #t1 {
+  /* margin: 0px 5px; */
+  background-color: #ff394d;
+}
 /* box 5 */
 .box5 {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.box5 p {
+.box5 .nm {
   text-align: center;
   color: #ff3147;
 }
@@ -197,7 +243,29 @@
   font-size: 30px;
 }
 .box5 .user {
-  height: 300px;
+  height: 200px;
+  display: flex;
+  /* width: 80%; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.box5 .user .b1 {
+  /* height: 300px; */
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+.box5 .user :hover {
+  background-color: #bcbcbc;
+  border-radius: 5px;
+  transition: ease-in-out;
+}
+.box5 .user .b1 img {
+  width: 20px;
 }
 
 /* BOX 6 */
@@ -206,8 +274,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.box6 p {
+.box6 .nm {
   text-align: center;
   color: #ff3147;
 }
@@ -215,13 +285,65 @@
   text-align: center;
   font-size: 30px;
 }
-.box6 .quote {
+.box6 .feed {
+  width: 80%;
+  /* gap: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 300px;
 }
-
+.box6 .left {
+  width: 35%;
+  /* height: 100%; */
+  text-align: center;
+}
+.box6 .feed .left .name {
+  color: #ff3147;
+}
+.box6 .right {
+  width: 40%;
+  display: flex;
+  /* background-color: #f23187; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: 20px; */
+}
+.box6 .right .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box6 .right .form input {
+  width: 270px;
+  margin: 5px;
+  padding: 5px;
+}
+.box6 .right .form .but {
+  margin: 10px;
+  width: 100px;
+  background-color: rgb(188, 188, 188);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.form .but :hover {
+  background-color: rgb(59, 225, 131);
+  /* border: 1px solid green; */
+}
 /* footer */
 .footer {
   width: 100%;
   height: 250px;
   background-color: #ff3147;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  margin: 20px;
+  width: 90px;
 }
